@@ -1,8 +1,8 @@
-An UNOFFICIAL LaTeX beamer style for Beihang University
+An Unofficial LaTeX beamer style for Beihang University
 =======================================================
 
 
-** NOTE **
+**NOTE**
 
 1. This is an UNOFFICIAL LaTeX beamer style for Beihang University.
 2. This is not exactly a beamer style, rather it contains two LaTeX files to be inserted in the slides' source file.
@@ -49,7 +49,7 @@ The following is simple example of how it is used.
     \end{frame}
     \end{document}
 
-
+A more complete example is provided in the example.tex file.
 
 Xiaoke Yang <das.xiaoke@hotmail.com>
 Wed  1 Jun 11:25:45 CST 2016
