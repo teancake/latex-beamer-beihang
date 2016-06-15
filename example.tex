@@ -1,0 +1,91 @@
+\documentclass[10pt]{beamer}
+
+\ifx\pdfoutput\undefined
+% we are running LaTeX, not pdflatex
+\usepackage{graphicx}
+\else
+% we are running pdflatex, so convert .eps files to .pdf
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\fi
+
+\input{beihangbeamerstyle/beihangcolor}
+\input{beihangbeamerstyle/beihangbeamerstyle}
+
+\title{Beamer Style of Beihang University}
+\author{Xiaoke Yang\\
+Beihang University (\texttt{xiaokeyang@buaa.edu.cn})}
+\date{What seminar/conference, Which location, Wed  1 Jun 11:25:45 CST 2016}
+
+
+\begin{document}
+%----------------------------------------------------------------------
+% Title frame
+\begin{frame}[plain]
+\maketitle
+\end{frame}
+
+%----------------------------------------------------------------------
+% Outline frame
+% PLEASE RUN pdflatex TWICE 
+\begin{frame}
+\frametitle{Outline}
+\tableofcontents
+\end{frame}
+%%=====================================================================
+% Section I
+\section{Motivation}
+%----------------------------------------------------------------------
+% Content frame
+\begin{frame}
+\frametitle{Motivation}
+\framesubtitle{Why I made this beamer style}
+\begin{block}{Demonstration of the use of items and blocks}
+\begin{itemize}
+\item No one has done it.
+\item I need one.
+\pause \item Share with others.
+\end{itemize}
+\end{block}
+\pause
+\begin{block}{Another block}
+This block appears after a pause. Simply delete the \texttt{\textbackslash pause} command if this animation is not needed. Add the pause command whenever a pause is needed. 
+\end{block}
+\end{frame}
+
+%%=====================================================================
+% Section II
+\section{This is the second section: a two-column slide}
+%----------------------------------------------------------------------
+\begin{frame}
+\frametitle{A Two-column Slide}
+\begin{columns} 
+\begin{column}{0.5\textwidth} 
+\begin{block}{The first column}
+This is the first column.
+This is the first column.
+This is the first column.
+This is the first column.
+This is the first column.
+This is the first column.
+This is the first column.
+This is the first column.
+This is the first column.
+This is the first column.
+This is the first column.
+This is the first column.
+This is the first column.
+This is the first column.
+\end{block}
+\end{column}
+\begin{column}{0.5\textwidth} 
+\begin{block}{The second column}
+{\color{coreBlue}{This is the only ``Beihang colour'' I found. }} Other built-in colours can also be used, e.g. {\color{red}{red}}, {\color{orange}{orange}}, {\color{blue}{blue}}
+\vspace{9.5em}
+\end{block}
+\end{column}
+\end{columns}
+\end{frame}
+\end{document}
+
+
