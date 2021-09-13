@@ -9,16 +9,23 @@
 \usepackage{epstopdf}
 \fi
 
+%%%% comment out CJKUtf8 package if Chinese characters are not used.
+\usepackage{CJKutf8}
+
 \input{beihangbeamerstyle/beihangcolor}
 \input{beihangbeamerstyle/beihangbeamerstyle}
 
-\title{Beamer Style of Beihang University}
+\title{Beamer Style of 北京航空航天大学}
 \author{Xiaoke Yang\\
 Beihang University (\texttt{xiaokeyang@buaa.edu.cn})}
 \date{What seminar/conference, Which location, Wed  1 Jun 11:25:45 CST 2016}
 
 
 \begin{document}
+
+%%%% comment out the CJK* environment if Chinese characters are not used.
+\begin{CJK*}{UTF8}{gbsn}
+
 %----------------------------------------------------------------------
 % Title frame
 \begin{frame}[plain]
@@ -29,7 +36,7 @@ Beihang University (\texttt{xiaokeyang@buaa.edu.cn})}
 % Outline frame
 % PLEASE RUN pdflatex TWICE 
 \begin{frame}
-\frametitle{Outline}
+\frametitle{提纲Outline}
 \tableofcontents
 \end{frame}
 %%=====================================================================
@@ -86,6 +93,8 @@ This is the first column.
 \end{column}
 \end{columns}
 \end{frame}
-\end{document}
 
+%%%% comment out the CJK* environment if Chinese characters are not used.
+\end{CJK*}
+\end{document}
 
